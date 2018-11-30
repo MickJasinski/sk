@@ -24,6 +24,8 @@ const Header = ({ siteTitle }) => (
           }}
         >
           {siteTitle}
+          <h3>Naprawa komputerow • smartfonow • tabletow</h3>
+          <h5>tel: 07860276353</h5>
         </Link>
       </h1>
     </div>
