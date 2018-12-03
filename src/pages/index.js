@@ -1,12 +1,16 @@
 import React from 'react'
 // import { Link } from 'gatsby'
 
+import homeImg  from '../images/homeArtwork.jpg';
 import stethoscope from '../images/stethoscope.svg';
 
 import Layout from '../components/layout'
 
 const IndexPage = () => (
   <Layout>
+    <div>
+      <img src={homeImg} alt=""/>
+    </div>
     <div>
       <img src={stethoscope} alt="stethoscope" style={{
         width: 160,

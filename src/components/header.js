@@ -10,16 +10,17 @@ const Header = ({ siteTitle }) => (
   >
     <div
       style={{
+        backgroundColor: '#10262b',
         margin: '0 auto',
-        maxWidth: 960,
+        // maxWidth: 960,
         padding: '1.45rem 1.0875rem',
-      }}
-    >
+      }}>
+      <h5>tel: 07860276353</h5>
       <h1 style={{ margin: 0 }}>
         <Link
           to="/"
           style={{
-            color: '#4ab2a8',
+            color: '#f2b33e',
             textDecoration: 'none',
           }}
         >
@@ -38,7 +39,6 @@ const Header = ({ siteTitle }) => (
             }}>
             {siteTitle}
             <h3>Naprawa komputerów • smartfonów • tabletów</h3>
-            <h5>tel: 07860276353</h5>
           </div>
         </Link>
       </h1>
