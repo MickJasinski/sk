@@ -7,9 +7,9 @@ import Header from '../components/header'
 import homeArtwork from '../images/homeArtwork.svg';
 import stethoscope from '../images/stethoscope.svg';
 
+// Global styles
 const GlobalStyle = createGlobalStyle`
-  @import url('https://fonts.googleapis.com/css?family=Montserrat:400,800,900'); 
-
+  @import url('https://fonts.googleapis.com/css?family=Montserrat:200,400,900'); 
   body {
     margin: 0;
     font-family: 'Montserrat';
