@@ -19,12 +19,21 @@ const GlobalStyle = createGlobalStyle`
   }
 `; 
 
+// styled components
+const HomeArtwork = styled.img`
+  max-height: 400px;
+`;
+
+const Stethoscope = styled.img`
+  width: 140px;
+`;
+
 const IndexPage = () => (
   <div>
     <GlobalStyle />
     <Header />
-    <img src={homeArtwork} />
-    <img src={stethoscope} />
+    <HomeArtwork src={homeArtwork} />
+    <Stethoscope src={stethoscope} />
   </div>
 )
 
