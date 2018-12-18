@@ -8,7 +8,11 @@ import phone from '../images/phone.svg';
 
 
 // Styled components
-const HeaderStyle = styled.div`
+const ContactBar = styled.div`
+
+`;
+
+const HeaderWrap = styled.div`
   display: flex;
   justify-content: left;
   align-items: center;
@@ -22,6 +26,7 @@ const Logotype = styled.div `
   text-align: center;
   float: left;
 `;
+
 const Logo = styled.img`
   width: 80px;
   padding: 10px 0 10px 30px;
@@ -51,7 +56,7 @@ const PhoneWrap = styled(H1)`
 
 // Render
 const Header = () => (
-  <HeaderStyle>
+  <HeaderWrap>
     <Logo src={logo} alt="Serwis Komputerowy - Logo" />
     <Logotype>
       <H1>Serwis Komputerowy</H1>
@@ -61,7 +66,7 @@ const Header = () => (
       <Phone src={phone}></Phone>
       0786 027 63 53
     </PhoneWrap>
-  </HeaderStyle>
+  </HeaderWrap>
 )
 
 export default Header
