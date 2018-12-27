@@ -9,7 +9,9 @@ import phone from '../images/phone.svg';
 
 // Styled components
 const ContactBar = styled.div`
-
+  background-color: ${colors.darkBlueL};
+  width: 100vw;
+  height: 50px;
 `;
 
 const HeaderWrap = styled.div`
@@ -30,10 +32,15 @@ const Logotype = styled.div `
 const Logo = styled.img`
   width: 80px;
   padding: 10px 0 10px 30px;
+  @media (max-width: 500px) {
+    width: 68px;
+  }
 `;
 
 const Phone = styled.img`
   width: 50px;
+  position: relative;
+  top: 2px;
   padding-right: 23px;
 `;
 
@@ -46,27 +53,41 @@ const H1 = styled.h1`
   font-weight: ${({thin}) => thin ? '200' : '900'};
 `;
 
-const PhoneWrap = styled(H1)`
-  font-size: ${({big}) => big ? '2rem' : '1rem'};
+const Brand = styled(H1)`
+  @media (max-width: 500px) {
+    font-size: 1rem;
+  }
+`;
+
+const PhoneNo = styled(H1)`
+  font-size: ${({big}) => big ? '1.8rem' : '1rem'};
+  line-height: 54px;
   display: block;
   width: 100%;  
-  text-align: right;
+  text-align: center;
   padding-right: 30px;
+  margin: 0;
+  margin-right: 20px;
 `;
 
 // Render
 const Header = () => (
+<div>
+  <ContactBar>
+    <PhoneNo big thin>
+      <Phone src={phone}></Phone>
+      0786 027 63 53
+    </PhoneNo>
+  </ContactBar>
+    
   <HeaderWrap>
     <Logo src={logo} alt="Serwis Komputerowy - Logo" />
     <Logotype>
-      <H1>Serwis Komputerowy</H1>
-      <H1 space thin>Bedford</H1>
+      <Brand>Serwis Komputerowy</Brand>
+      <Brand space thin>Bedford</Brand>
     </Logotype>
-    <PhoneWrap big thin>
-      <Phone src={phone}></Phone>
-      0786 027 63 53
-    </PhoneWrap>
   </HeaderWrap>
+</div>
 )
 
 export default Header
